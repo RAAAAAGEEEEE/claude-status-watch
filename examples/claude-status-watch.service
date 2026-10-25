@@ -1,0 +1,6 @@
+[Unit]
+Description=Check status.claude.com and notify on changes
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/python3 -I %h/claude-status-watch/claude_status_watch.py check

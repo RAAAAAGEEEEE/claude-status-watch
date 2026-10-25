@@ -1,0 +1,2 @@
+# crontab -e   (every 5 minutes; adjust the path to where you cloned the repository)
+*/5 * * * * /usr/bin/python3 -I $HOME/claude-status-watch/claude_status_watch.py check >> $HOME/.claude-status-watch/cron.log 2>&1

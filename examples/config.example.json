@@ -1,0 +1,17 @@
+{
+  "language": "en",
+  "state_file": "~/.claude-status-watch/state.json",
+  "status_file": "~/.claude-status-watch/status.json",
+  "filters": {
+    "components": [],
+    "models": []
+  },
+  "channels": [
+    {
+      "type": "telegram",
+      "env_file": "~/.claude-status-watch/secrets.env",
+      "token_env": "TELEGRAM_BOT_TOKEN",
+      "chat_env": "TELEGRAM_CHAT_ID"
+    }
+  ]
+}

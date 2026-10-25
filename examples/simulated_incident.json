@@ -1,0 +1,23 @@
+{
+  "page": {"id": "example", "name": "Claude", "url": "https://status.claude.com"},
+  "status": {"indicator": "major", "description": "Partial System Outage"},
+  "components": [
+    {"id": "c1", "name": "claude.ai", "status": "operational", "group": false},
+    {"id": "c2", "name": "Claude API (api.anthropic.com)", "status": "partial_outage", "group": false},
+    {"id": "c3", "name": "Claude Code", "status": "operational", "group": false}
+  ],
+  "incidents": [
+    {
+      "id": "sim0000example",
+      "name": "Elevated errors on Claude Sonnet",
+      "status": "investigating",
+      "impact": "major",
+      "started_at": "2026-01-01T10:00:00.000Z",
+      "components": [{"id": "c2", "name": "Claude API (api.anthropic.com)", "status": "partial_outage"}],
+      "incident_updates": [
+        {"id": "u1", "status": "investigating", "body": "We are investigating elevated errors on Claude Sonnet.", "affected_components": null}
+      ]
+    }
+  ],
+  "scheduled_maintenances": []
+}
